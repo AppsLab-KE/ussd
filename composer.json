@@ -1,0 +1,15 @@
+{
+    "name": "kodathecoder/ussd",
+    "type": "project",
+    "authors": [{
+        "name": "kodaTheCoder",
+        "email": "marvincollins14@gmail.com"
+    }],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "AppsLab\\Ussd\\": "app/"
+        }
+    }
+}
