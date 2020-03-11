@@ -2,19 +2,15 @@
 
 $uri = $_SERVER['REQUEST_URI'];
 
-switch ($url) {
-    case '':
-        echo "working";
-        break;
-    case '/':
-        echo "still at home";
-    break;
-    case 'about':
-        echo "about us page";
-        break;
-    default:
-        echo "404";
-        break;
-}
+$sessionId = $_POST['sessionId'];
+$serviceCode = $_POST['serviceCode'];
+$phoneNumber = $_POST['phoneNumber'];
+$text = $_POST['text'];
 
-var_dump($uri);
+if ($text == "") {
+    $response = "END Welcome marvin \n";
+    $response .= "1. Working well \n";
+    $response .= "2. Oooh yeah \n";
+}
+header('Content-type: text/plain');
+echo $response;
