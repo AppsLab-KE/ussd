@@ -1,11 +1,20 @@
 <?php
 
-use AppsLab\Ussd\Ussd;
+$uri = $_SERVER['REQUEST_URI'];
 
-require_once('vendor/autoload.php');
+switch ($url) {
+    case '':
+        echo "working";
+        break;
+    case '/':
+        echo "still at home";
+    break;
+    case 'about':
+        echo "about us page";
+        break;
+    default:
+        echo "404";
+        break;
+}
 
-$ussd = new Ussd();
-
-var_dump($ussd);
-
-if($_GET)
+var_dump($uri);

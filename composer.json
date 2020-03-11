@@ -6,7 +6,9 @@
         "email": "marvincollins14@gmail.com"
     }],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "vlucas/phpdotenv": "^4.1@dev"
+    },
     "autoload": {
         "psr-4": {
             "AppsLab\\Ussd\\": "app/"
