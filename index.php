@@ -1,6 +1,14 @@
 <?php
 
+require('vendor/autoload.php');
+use Dotenv\Dotenv;
+
 $uri = $_SERVER['REQUEST_URI'];
+
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+var_dump($_ENV['APP_NAME']);
 
 $sessionId = $_POST['sessionId'];
 $serviceCode = $_POST['serviceCode'];
